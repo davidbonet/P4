@@ -171,7 +171,7 @@ ejercicios indicados.**
  
   |                        | LP   | LPCC | MFCC |
   |------------------------|:----:|:----:|:----:|
-  | Tasa de error |7.77%|4.33%|1.02%|
+  | Tasa de error |7.77%|1.15%|1.02%|
   
 
 ### Verificación del locutor.
