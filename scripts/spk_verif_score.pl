@@ -101,11 +101,11 @@ if ($threshold == -1e30) {
 	    $min_cost = $cost;
 	    $threshold = $thr;
 	}
-	print "THR\t$thr\t$cost\t$p_miss($n_miss)\t$p_falseAlarm($n_falseAlarm)\n" 	
-	    if $show_threshold_search;
+	#print "THR\t$thr\t$cost\t$p_miss($n_miss)\t$p_falseAlarm($n_falseAlarm)\n" 	
+	    #if $show_threshold_search;
 
     }
-    print "\n\n" if $show_threshold_search;
+    #print "\n\n" if $show_threshold_search;
 } 
 
 $n_falseAlarm = count_gt($threshold, @impostors);

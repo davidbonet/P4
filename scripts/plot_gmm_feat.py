@@ -1,6 +1,7 @@
-#! /usr/bin/python3 -u
+#! /usr/bin/env python3 -u
 
 import struct
+import os
 
 import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
@@ -21,23 +22,23 @@ def read_gmm(fileGMM):
             headIn = fpGmm.read(15)
     
             if headIn != header:
-                print(f'ERROR: {fileGMM} is not a valid GMM file')
+                print('ERROR: {fileGMM} is not a valid GMM file'.format(fileGMM=fileGMM))
                 exit(-1)
 
             numMix = struct.unpack('@I', fpGmm.read(4))[0]
-            weights = np.array(struct.unpack(f'@{numMix}f', fpGmm.read(numMix * 4)))
+            weights = np.array(struct.unpack('{numMix}f'.format(numMix=numMix), fpGmm.read(numMix * 4)))
 
             (numMix, numCof) = struct.unpack('@II', fpGmm.read(2 * 4))
-            means = struct.unpack(f'@{numMix * numCof}f', fpGmm.read(numMix * numCof * 4))
+            means = struct.unpack('@{totCof}f'.format(totCof=numMix*numCof), fpGmm.read(numMix * numCof * 4))
             means = np.array(means).reshape(numMix, numCof)
 
             (numMix, numCof) = struct.unpack('@II', fpGmm.read(2 * 4))
-            invStd = struct.unpack(f'@{numMix * numCof}f', fpGmm.read(numMix * numCof * 4))
+            invStd = struct.unpack('@{totCof}f'.format(totCof=numMix*numCof), fpGmm.read(numMix * numCof * 4))
             covs = np.array(invStd).reshape(numMix, numCof) ** -2
 
             return weights, means, covs
     except:
-        raise Exception(f'Error al leer el fichero {fileGMM}')
+        raise Exception('Error al leer el fichero {fileGMM}'.format(fileGMM=fileGMM))
 
 
 def read_fmatrix(fileFM):
@@ -47,12 +48,12 @@ def read_fmatrix(fileFM):
     try:
         with open(fileFM, 'rb') as fpFM:
             (numFrm, numCof) = struct.unpack('@II', fpFM.read(2 * 4))
-            data = struct.unpack(f'@{numFrm * numCof}f', fpFM.read(numFrm * numCof * 4))
+            data = struct.unpack('@{totCof}f'.format(totCof=numFrm*numCof), fpFM.read(numFrm * numCof * 4))
             data = np.array(data).reshape(numFrm, numCof)
 
             return data
     except:
-        raise Exception(f'Error al leer el fichero {fileFM}')
+        raise Exception('Error al leer el fichero {fileFM}'.format(fileFM=fileFM))
 
 
 def pdfGMM(X, weights, means, covs):
@@ -67,7 +68,7 @@ def pdfGMM(X, weights, means, covs):
         try:
             pdf += weight * gauss.pdf(X, mean=means[mix], cov=covs[mix])
         except:
-            raise Exception(f'Error al calcular la mezcla {mix} del GMM')
+            raise Exception('Error al calcular la mezcla {mix} del GMM'.format(mix=mix))
 
     return pdf
 
@@ -117,7 +118,7 @@ def plotGMM(fileGMM, xDim, yDim, percents, colorGmm, filesFeat=None, colorFeat=N
     # en el percentil más estrecho sea 1000. Calculamos el más estrecho como el
     # valor mínimo de p*(1-p)
 
-    numSmp = np.ceil(np.max(1000 / (percents * (1 - percents))) ** 0.5)
+    numSmp = int(np.ceil(np.max(1000 / (percents * (1 - percents))) ** 0.5))
 
     x = np.linspace(min_[0], max_[0], numSmp)
     y = np.linspace(min_[1], max_[1], numSmp)
@@ -133,17 +134,25 @@ def plotGMM(fileGMM, xDim, yDim, percents, colorGmm, filesFeat=None, colorFeat=N
 
     Z = Z.reshape(X.shape)
 
-    style = {'colors': [colorGmm] * len(percents), 'linestyles': ['dotted', 'solid']}
+    style = {'colors': [colorGmm] * len(percents), 'linestyles': ['dotted', 'dotted', 'solid'], 'linewidths': [1, 3, 3]}
 
     CS = ax.contour(X, Y, Z, levels=levels, **style)
     fmt = {levels[i]: f'{percents[i]:.0%}' for i in range(len(levels))}
-    ax.clabel(CS, inline=1, fontsize=14, fmt=fmt)
+    ax.clabel(CS, inline=1, fontsize=10, fmt=fmt)
 
-    plt.title(f'Region coverage predicted by {fileGMM}')
+    nomGMM = "/".join(fileGMM.strip("/").split('/')[3:])
+    nomGMM = os.path.splitext(nomGMM)[0]
+
+    nomFEAT = "/".join(filesFeat[0].strip("/").split('/')[3:])
+    nomFEAT = "/".join(nomFEAT.strip("/").split('/')[:1])
+    nomFEAT = os.path.splitext(nomFEAT)[0]
+
+
+    plt.title('GMM: {nomGMM}, FEAT: {nomFEAT}'.format(nomGMM=nomGMM, nomFEAT=nomFEAT))
     plt.axis('tight')
     plt.axis(limits)
+    plt.savefig('img/aux.png')
     plt.show()
-
 
 ########################################################################################################
 # Main Program
@@ -186,7 +195,7 @@ if __name__ == '__main__':
     limits = args['--limits']
     if limits != 'auto':
         limits = [int(limit) for limit in limits.split(',')]
-        if len(limits) is not 4:
+        if len(limits) != 4:
             print('ERROR: xyLimits must be four comma-separated values')
             exit(1)
     else:

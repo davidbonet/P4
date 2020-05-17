@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['m_5fncol_915',['m_ncol',['../classupc_1_1matrix.html#a053950016358b76da92c0a25c01987e9',1,'upc::matrix']]],
+  ['m_5fnrow_916',['m_nrow',['../classupc_1_1matrix.html#a2a32ddd89dd5b9c85d95498f9fb77c70',1,'upc::matrix']]],
+  ['m_5fp_917',['m_p',['../classupc_1_1matrix.html#a01c5df069e0cddf9efcb5632a7e9c220',1,'upc::matrix']]],
+  ['m_5fv_918',['m_v',['../classupc_1_1matrix.html#a1fd23b090b8e985c526d913792ad0f96',1,'upc::matrix']]],
+  ['max_5fscore_919',['max_score',['../namespacespk__verif__score.html#a7b1994e440605afe772526a8c7053e3f',1,'spk_verif_score.max_score()'],['../namespacespk__verif__score__ORIGINAL.html#a7c3ff8a9d5d7574547e84b1562c9635f',1,'spk_verif_score_ORIGINAL.max_score()']]],
+  ['max_5fx_920',['max_x',['../namespacegmm__plot.html#ad1c28be0c691656c942b6a233253365e',1,'gmm_plot']]],
+  ['max_5fy_921',['max_y',['../namespacegmm__plot.html#a3338763fd9cc965e629b0d2949bd6967',1,'gmm_plot']]],
+  ['mfcc_922',['MFCC',['../namespacewav2mfcc.html#a0a163c336bcc3f259f8ba47279fdc13e',1,'wav2mfcc.MFCC()'],['../namespacewav2mfcc__mini.html#ad874d8e3eea598cd55d7b8140833e7b3',1,'wav2mfcc_mini.MFCC()']]],
+  ['mfcc_5forder_923',['mfcc_order',['../namespacewav2mfcc.html#ac47fd8e7b1685a3b5653d49f59103a24',1,'wav2mfcc.mfcc_order()'],['../namespacewav2mfcc__mini.html#a76a89a5d3b9e03e7de4f5b48d357d9b7',1,'wav2mfcc_mini.mfcc_order()']]],
+  ['min_5fcost_924',['min_cost',['../namespacespk__verif__score.html#a99303152f8d1a26dd245425f412e761c',1,'spk_verif_score.min_cost()'],['../namespacespk__verif__score__ORIGINAL.html#a024b105075cec664921f9d6c802131aa',1,'spk_verif_score_ORIGINAL.min_cost()']]],
+  ['min_5fscore_925',['min_score',['../namespacespk__verif__score.html#ab0a8428640460bae0de0e073bbd0aef2',1,'spk_verif_score.min_score()'],['../namespacespk__verif__score__ORIGINAL.html#ae5cce6a9664d382d956c4d88b54fddec',1,'spk_verif_score_ORIGINAL.min_score()']]],
+  ['min_5fx_926',['min_x',['../namespacegmm__plot.html#aeb13eee1b41fe018b660d5f2d3c265b7',1,'gmm_plot']]],
+  ['min_5fy_927',['min_y',['../namespacegmm__plot.html#afca20a559880ee39f960bc10ebf73c49',1,'gmm_plot']]],
+  ['minutes_928',['minutes',['../namespaceexeIterar.html#a30853a07313926a300b1fefeff99de64',1,'exeIterar']]],
+  ['mu_929',['mu',['../classupc_1_1GMM.html#afe129391ee1dadfe15953b3f402b6111',1,'upc::GMM']]],
+  ['mu_5fx_930',['mu_x',['../namespacegmm__plot.html#a550d29c8273fd69a834cac070735f73d',1,'gmm_plot']]],
+  ['mu_5fy_931',['mu_y',['../namespacegmm__plot.html#ae307d69c68d4160179b6834e2b3d5776',1,'gmm_plot']]]
+];

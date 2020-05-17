@@ -1,0 +1,7 @@
+{
+        "files.associations": {
+                "valarray": "cpp",
+                "iostream": "cpp"
+        },
+        "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3"
+}

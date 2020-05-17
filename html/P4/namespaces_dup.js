@@ -1,0 +1,25 @@
+var namespaces_dup =
+[
+    [ "anonymous_namespace{docopt_util.h}", "namespaceanonymous__namespace_02docopt__util_8h_03.html", null ],
+    [ "docopt", "namespacedocopt.html", null ],
+    [ "exeFinal", "namespaceexeFinal.html", null ],
+    [ "exeIterar", "namespaceexeIterar.html", null ],
+    [ "ffft", "namespaceffft.html", null ],
+    [ "gmm_plot", "namespacegmm__plot.html", null ],
+    [ "plot_gmm", "namespaceplot__gmm.html", null ],
+    [ "plot_gmm_feat", "namespaceplot__gmm__feat.html", null ],
+    [ "plot_gmm_feat_extended", "namespaceplot__gmm__feat__extended.html", null ],
+    [ "run_compute", "namespacerun__compute.html", null ],
+    [ "run_spkid", "namespacerun__spkid.html", null ],
+    [ "run_spkid_mini", "namespacerun__spkid__mini.html", null ],
+    [ "run_tests", "namespacerun__tests.html", null ],
+    [ "run_train", "namespacerun__train.html", null ],
+    [ "spk_verif_score", "namespacespk__verif__score.html", null ],
+    [ "spk_verif_score_ORIGINAL", "namespacespk__verif__score__ORIGINAL.html", null ],
+    [ "std", "namespacestd.html", null ],
+    [ "upc", "namespaceupc.html", "namespaceupc" ],
+    [ "wav2lp", "namespacewav2lp.html", null ],
+    [ "wav2lpcc", "namespacewav2lpcc.html", null ],
+    [ "wav2mfcc", "namespacewav2mfcc.html", null ],
+    [ "wav2mfcc_mini", "namespacewav2mfcc__mini.html", null ]
+];

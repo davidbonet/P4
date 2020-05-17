@@ -1,0 +1,10 @@
+# List of files installed by Meson
+# Does not contain files installed by custom scripts.
+/Users/davidbonet/Desktop/P4Git/lib/libpav.a
+/Users/davidbonet/Desktop/P4Git/bin/gmm_classify
+/Users/davidbonet/Desktop/P4Git/bin/gmm_show
+/Users/davidbonet/Desktop/P4Git/bin/gmm_train
+/Users/davidbonet/Desktop/P4Git/bin/gmm_verify
+/Users/davidbonet/Desktop/P4Git/bin/pearson
+/Users/davidbonet/Desktop/P4Git/bin/fmatrix_cut
+/Users/davidbonet/Desktop/P4Git/bin/fmatrix_show

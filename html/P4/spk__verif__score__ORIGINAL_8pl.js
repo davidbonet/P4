@@ -1,0 +1,25 @@
+var spk__verif__score__ORIGINAL_8pl =
+[
+    [ "cost", "spk__verif__score__ORIGINAL_8pl.html#ada4ef0bcfe555a061a9b978688fa9b9a", null ],
+    [ "cost_norm", "spk__verif__score__ORIGINAL_8pl.html#aceaaaffaabbfde0721769b755a41b323", null ],
+    [ "impostors", "spk__verif__score__ORIGINAL_8pl.html#ab66f060e0ab0f85fb0b66b6f10acde1f", null ],
+    [ "max_score", "spk__verif__score__ORIGINAL_8pl.html#a7c3ff8a9d5d7574547e84b1562c9635f", null ],
+    [ "min_cost", "spk__verif__score__ORIGINAL_8pl.html#a024b105075cec664921f9d6c802131aa", null ],
+    [ "min_score", "spk__verif__score__ORIGINAL_8pl.html#ae5cce6a9664d382d956c4d88b54fddec", null ],
+    [ "n", "spk__verif__score__ORIGINAL_8pl.html#a355138cdb506fb1ce715d0a6549bc2fe", null ],
+    [ "n_falseAlarm", "spk__verif__score__ORIGINAL_8pl.html#aa788903466bb3e40438ebb4e1f66504e", null ],
+    [ "n_impostors", "spk__verif__score__ORIGINAL_8pl.html#a7b2eef606d137da33dc6134c1c9ac0d2", null ],
+    [ "n_miss", "spk__verif__score__ORIGINAL_8pl.html#a8437386d5bfd2389b830c6b448f1c532", null ],
+    [ "N_thr", "spk__verif__score__ORIGINAL_8pl.html#a178eeaba81870da538184a3ac0200657", null ],
+    [ "n_users", "spk__verif__score__ORIGINAL_8pl.html#a2dc3394b739493a0ac51e418aa9604e7", null ],
+    [ "p_falseAlarm", "spk__verif__score__ORIGINAL_8pl.html#a156ec3e1672c9d2948c7d93d6d29e37b", null ],
+    [ "p_miss", "spk__verif__score__ORIGINAL_8pl.html#a8e510079b787a2cb93159af019bb8733", null ],
+    [ "p_target", "spk__verif__score__ORIGINAL_8pl.html#a5d0eb89df5750436a7e5534a5fd86bd2", null ],
+    [ "show_threshold_search", "spk__verif__score__ORIGINAL_8pl.html#a8265d566371e1f3c49cb615eb7edbe60", null ],
+    [ "spkid", "spk__verif__score__ORIGINAL_8pl.html#ae696d62a779c904f39d1328b71c1ec47", null ],
+    [ "thr", "spk__verif__score__ORIGINAL_8pl.html#a9b506e212f2fd11aae62de7ae7b57089", null ],
+    [ "thr_step", "spk__verif__score__ORIGINAL_8pl.html#a9171725e2f19ff2beec6693c433792f6", null ],
+    [ "threshold", "spk__verif__score__ORIGINAL_8pl.html#a72df2e38586525650b48379e2db57b56", null ],
+    [ "user", "spk__verif__score__ORIGINAL_8pl.html#aab6bdeaceeafd7a63846674fe725b3a8", null ],
+    [ "users", "spk__verif__score__ORIGINAL_8pl.html#ac4d843e59d7fb2c1147e84e30b32d22b", null ]
+];

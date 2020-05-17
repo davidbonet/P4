@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['ascii_454',['ascii',['../namespaceupc_1_1ascii.html',1,'upc']]],
+  ['u_455',['u',['../classupc_1_1DigitalFilter.html#ad8b8d1c7bde2fca050aa297b66d69179',1,'upc::DigitalFilter']]],
+  ['ubuntu_5fsptk_456',['UBUNTU_SPTK',['../namespacewav2lp.html#a52af072d555f8d5134cc5a1403996013',1,'wav2lp.UBUNTU_SPTK()'],['../namespacewav2lpcc.html#ae1256fac6d554ab1df1b32a3735b8d3e',1,'wav2lpcc.UBUNTU_SPTK()'],['../namespacewav2mfcc.html#a00374b06cdc59e48e9f71a4e2fe450f8',1,'wav2mfcc.UBUNTU_SPTK()'],['../namespacewav2mfcc__mini.html#afd8e92cb4c92b31b4dcefca827ef32df',1,'wav2mfcc_mini.UBUNTU_SPTK()']]],
+  ['uniquepatternset_457',['UniquePatternSet',['../namespacedocopt.html#a26db216bf5ea5e12585f2561aad83c06',1,'docopt']]],
+  ['upc_458',['upc',['../namespaceupc.html',1,'']]],
+  ['usage_459',['usage',['../fmatrix__cut_8cpp.html#afc163cd0f38c6de8a70491a8708ff5f7',1,'usage(const char *prog):&#160;fmatrix_cut.cpp'],['../fmatrix__show_8cpp.html#a39c3a9ec6e5e8485c111aa2ff74c12fd',1,'usage(const char *progname):&#160;fmatrix_show.cpp'],['../gmm__classify_8cpp.html#a36b4b5f4a36741a4573977b6dd5c8bd3',1,'usage(const char *progname, int err):&#160;gmm_classify.cpp'],['../gmm__train_8cpp.html#a36b4b5f4a36741a4573977b6dd5c8bd3',1,'usage(const char *progname, int err):&#160;gmm_train.cpp'],['../gmm__verify_8cpp.html#a36b4b5f4a36741a4573977b6dd5c8bd3',1,'usage(const char *progname, int err):&#160;gmm_verify.cpp'],['../pearson_8cpp.html#a36b4b5f4a36741a4573977b6dd5c8bd3',1,'usage(const char *progname, int err):&#160;pearson.cpp'],['../naval__fate_8cpp.html#a6d6e26e7e3af2d4bd47f6582aff224f8',1,'USAGE():&#160;naval_fate.cpp'],['../namespaceplot__gmm__feat.html#a3b8907f36a45a7f01a2e278eca869319',1,'plot_gmm_feat.USAGE()'],['../namespaceplot__gmm__feat__extended.html#a1ccf9666e41ddfdcdbadd0083c966016',1,'plot_gmm_feat_extended.USAGE()']]],
+  ['use_5fbuffer_460',['use_buffer',['../classffft_1_1FFTReal.html#ae91999ceb42d32eef5bdd0d16db989d5',1,'ffft::FFTReal']]],
+  ['user_461',['user',['../namespacespk__verif__score.html#a9b37bf032b5f078b3de2d3523d6fa8a1',1,'spk_verif_score.user()'],['../namespacespk__verif__score__ORIGINAL.html#aab6bdeaceeafd7a63846674fe725b3a8',1,'spk_verif_score_ORIGINAL.user()']]],
+  ['users_462',['users',['../namespacespk__verif__score.html#a016c35847a2f3cb808076f3e48b79f46',1,'spk_verif_score.users()'],['../namespacespk__verif__score__ORIGINAL.html#ac4d843e59d7fb2c1147e84e30b32d22b',1,'spk_verif_score_ORIGINAL.users()']]]
+];
