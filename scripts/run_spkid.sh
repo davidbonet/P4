@@ -96,7 +96,7 @@ compute_lp() {
 compute_lpcc() {
     for filename in $(cat $lists/class/all.train $lists/class/all.test); do
         mkdir -p `dirname $w/$FEAT/$filename.$FEAT`
-        EXEC="wav2lpcc 14 14 $db/$filename.wav $w/$FEAT/$filename.$FEAT"
+        EXEC="wav2lpcc 15 14 $db/$filename.wav $w/$FEAT/$filename.$FEAT"
         echo $EXEC && $EXEC || exit 1
     done
 }
@@ -105,7 +105,7 @@ compute_mfcc() {
     for filename in $(cat $lists/class/all.train $lists/class/all.test); do
         mkdir -p `dirname $w/$FEAT/$filename.$FEAT`
         # EXEC="wav2mfcc 14 $db/$filename.wav $w/$FEAT/$filename.$FEAT 20 8"
-          EXEC="wav2mfcc 16 $db/$filename.wav $w/$FEAT/$filename.$FEAT 20 8"
+          EXEC="wav2mfcc 13 $db/$filename.wav $w/$FEAT/$filename.$FEAT 20 8"
         echo $EXEC && $EXEC || exit 1
     done
 }

@@ -1,4 +1,4 @@
-Build started at 2020-05-17T22:53:22.086297
+Build started at 2020-05-17T23:06:22.104108
 Main binary: /usr/local/opt/python/bin/python3.7
 Build Options: -Dprefix=/Users/davidbonet/Desktop/P4Git -Dlibdir=lib -Dbuildtype=release
 Python system: Darwin
@@ -51,8 +51,8 @@ Build targets in project: 22
 
 Found ninja-1.10.0 at /usr/local/bin/ninja
 Running compile:
-Working directory:  /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmp9av95p5s
-Command line:  c++ /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmp9av95p5s/testfile.cpp -o /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmp9av95p5s/output.obj -pipe -c -std=c++11 
+Working directory:  /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmpn7yhzlvs
+Command line:  c++ /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmpn7yhzlvs/testfile.cpp -o /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmpn7yhzlvs/output.obj -pipe -c -std=c++11 
 
 Code:
  int i = static_cast<int>(0);
@@ -62,8 +62,8 @@ Compiler stderr:
  
 Compiler accepts -std=c++11: YES
 Running compile:
-Working directory:  /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmp6qs2o76o
-Command line:  c++ /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmp6qs2o76o/testfile.cpp -o /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmp6qs2o76o/output.obj -pipe -c -O0 -fpermissive --print-search-dirs 
+Working directory:  /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmpbez1oaym
+Command line:  c++ /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmpbez1oaym/testfile.cpp -o /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmpbez1oaym/output.obj -pipe -c -O0 -fpermissive --print-search-dirs 
 
 Code:
  
