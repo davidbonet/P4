@@ -158,9 +158,10 @@ ejercicios indicados.**
   
 - **Inserte una gráfica que permita comparar los modelos y poblaciones de dos locutores distintos (la gŕafica de la página 20 del enunciado puede servirle de referencia del resultado deseado). Analice la capacidad del modelado GMM para diferenciar las señales de uno y otro.**
   
-  <img src="img/gmms.png" align="center" width="800">
+    <img src="img/gmms.png" align="center" width="800">
   
-
+    Podemos observar que el modelado GMM consigue ajustarse muy bien a las características de su locutor (en este caso, los dos primeros coeficientes MFCC), así cuando comparamos el modelo de un locutor con la población de otro, se aprecia la diferencia entre ambos. Las zonas de población más densa (curva 50%) nos muestran de manera muy visual la gran diferencia entre un locutor y otro, por lo que el modelado GMM es una herramienta muy útil para el reconocimiento y verificación del locutor.
+    
 ### Reconocimiento del locutor.
 
 **Complete el código necesario para realizar reconociminto del locutor y optimice sus parámetros.**
@@ -170,7 +171,7 @@ ejercicios indicados.**
  
   |                        | LP   | LPCC | MFCC |
   |------------------------|:----:|:----:|:----:|
-  | Tasa de error |7.77%|1.15%|1.02%|
+  | Tasa de error |7.77%|4.33%|1.02%|
   
 
 ### Verificación del locutor.
@@ -180,15 +181,21 @@ ejercicios indicados.**
 - **Inserte una tabla con el *score* obtenido con su mejor sistema de verificación del locutor en la tarea de verificación de SPEECON. La tabla debe incluir el umbral óptimo, el número de falsas alarmas y de pérdidas, y el score obtenido usando la parametrización que mejor resultado le hubiera dado en la tarea de reconocimiento.**
  
  
-  |CostDetection obtenido| 37.9 | 
+  |CostDetection obtenido| 7.2 | 
   |------------------------|:----:|
-  | Umbral óptimo|1.563242302836|
-  | Número de falsas alarmas|70 / 250 = 0.2800|
-  | Número de pérdidas |1 / 1000 = 0.0010|
+  | Umbral óptimo|0.132254791277804|
+  | Número de falsas alarmas|18 / 250 = 0.0720|
+  | Número de pérdidas |0 / 1000 = 0.0000|
   
+  Para la optimización de los parámetros del sistema hemos utilizado diferentes scripts como `exeIterar.sh` y `run_compute.sh`,`run_train.sh` y `run_spkid_mini.sh` (una modificación de `run_spkid.sh`) para trabajar con una base de datos más reducida y reducir el coste computacional al optimizar las parametrizaciones. El que más hemos amortizado ha sido `exeIterar.sh` (trabajando con la base de datos completa), con el que hemos realizado todo tipo de pruebas y modificaciones para optimizar los parámetros de los modelos GMM.
  
 ### Test final y trabajo de ampliación.
 
 - **Recuerde adjuntar los ficheros `class_test.log` y `verif_test.log` correspondientes a la evaluación *ciega* final.**
+
+    Se encuentran en el directorio `/work`.
+    
+    - `class_test.log` se obtiene con el comando `FEAT=mfcc run_spkid finalclass`
+    - `verif_test.log` se obtiene con el comando `FEAT=mfcc run_spkid finalverif`
 
 - **Recuerde, también, enviar a Atenea un fichero en formato zip o tgz con la memoria con el trabajo realizado como ampliación, así como los ficheros `class_ampl.log` y/o `verif_ampl.log`, obtenidos como resultado del mismo.**
