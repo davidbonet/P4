@@ -3,7 +3,7 @@ python pav_spkid_pytorch/test_nn.py \
 --te_list_file lists/class/all.test \
 --weights_ckpt work/nn/e10_weights.ckpt \
 --log_file work/class_mfcc_nn.log \
---train_cfg work/nnn/train.opts \
+--train_cfg work/nn/train.opts \
 --ext mfcc \
 --verbose
 

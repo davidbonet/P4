@@ -124,6 +124,10 @@ build scripts/run_spkid: CUSTOM_COMMAND /Users/davidbonet/Desktop/P4Git/scripts/
  COMMAND = ln -sf /Users/davidbonet/Desktop/P4Git/scripts/run_spkid.sh /Users/davidbonet/Desktop/P4Git/bin/run_spkid
  description = Generating$ run_spkid.sh$ with$ a$ custom$ command.
 
+build scripts/run_spkid_mini: CUSTOM_COMMAND /Users/davidbonet/Desktop/P4Git/scripts/run_spkid_mini.sh
+ COMMAND = ln -sf /Users/davidbonet/Desktop/P4Git/scripts/run_spkid_mini.sh /Users/davidbonet/Desktop/P4Git/bin/run_spkid_mini
+ description = Generating$ run_spkid_mini.sh$ with$ a$ custom$ command.
+
 build scripts/plot_gmm_feat: CUSTOM_COMMAND /Users/davidbonet/Desktop/P4Git/scripts/plot_gmm_feat.py
  COMMAND = ln -sf /Users/davidbonet/Desktop/P4Git/scripts/plot_gmm_feat.py /Users/davidbonet/Desktop/P4Git/bin/plot_gmm_feat
  description = Generating$ plot_gmm_feat.py$ with$ a$ custom$ command.
@@ -223,7 +227,7 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony src/pav/libpav.a src/gmm_classify src/gmm_show src/gmm_train src/gmm_verify src/pearson src/fmatrix_cut src/fmatrix_show scripts/run_spkid scripts/plot_gmm_feat scripts/plot_gmm_feat_extended scripts/spk_verif_score scripts/wav2lp scripts/wav2lpcc scripts/wav2mfcc pav_spkid_pytorch/make_spk2idx pav_spkid_pytorch/test_nn pav_spkid_pytorch/train_nn pav_spkid_pytorch/utils
+build all: phony src/pav/libpav.a src/gmm_classify src/gmm_show src/gmm_train src/gmm_verify src/pearson src/fmatrix_cut src/fmatrix_show scripts/run_spkid scripts/run_spkid_mini scripts/plot_gmm_feat scripts/plot_gmm_feat_extended scripts/spk_verif_score scripts/wav2lp scripts/wav2lpcc scripts/wav2mfcc pav_spkid_pytorch/make_spk2idx pav_spkid_pytorch/test_nn pav_spkid_pytorch/train_nn pav_spkid_pytorch/utils
 
 build clean: phony meson-clean
 

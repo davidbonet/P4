@@ -1,4 +1,4 @@
-Build started at 2020-06-14T13:39:32.393610
+Build started at 2020-06-14T22:14:09.590882
 Main binary: /usr/local/opt/python/bin/python3.7
 Build Options: -Dprefix=/Users/davidbonet/Desktop/P4Git -Dlibdir=lib -Dbuildtype=release -Dbackend=ninja
 Python system: Darwin
@@ -21,12 +21,12 @@ Target machine cpu family: x86_64
 Target machine cpu: x86_64
 Program doxygen found: YES (/usr/local/bin/doxygen)
 Configuring Doxyfile using configuration
-Build targets in project: 20
+Build targets in project: 21
 
 Found ninja-1.10.0 at /usr/local/bin/ninja
 Running compile:
-Working directory:  /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmp7p0ee06_
-Command line:  c++ /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmp7p0ee06_/testfile.cpp -o /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmp7p0ee06_/output.obj -pipe -c -std=c++11 
+Working directory:  /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmpm5li2sla
+Command line:  c++ /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmpm5li2sla/testfile.cpp -o /var/folders/6h/55n_4nl93clbwybszxsb30300000gn/T/tmpm5li2sla/output.obj -pipe -c -std=c++11 
 
 Code:
  int i = static_cast<int>(0);
@@ -36,8 +36,8 @@ Compiler stderr:
  
 Compiler accepts -std=c++11: YES
 Running compile:
-Working directory:  /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmp9cakvdzs
-Command line:  c++ /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmp9cakvdzs/testfile.cpp -o /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmp9cakvdzs/output.obj -pipe -c -O0 -fpermissive --print-search-dirs 
+Working directory:  /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmphpu097wf
+Command line:  c++ /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmphpu097wf/testfile.cpp -o /Users/davidbonet/Desktop/P4Git/bin/release/meson-private/tmphpu097wf/output.obj -pipe -c -O0 -fpermissive --print-search-dirs 
 
 Code:
  
