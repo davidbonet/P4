@@ -31,6 +31,9 @@ def classify(model, fmatrix, in_frames):
     # (4) Sum up the logprobs to obtain final decission
     pred = y_.sum(dim=0)
     class_ = pred.max(dim=0)[1]
+    
+    print(pred)
+
     return class_
 
 def main(opts):

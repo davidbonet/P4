@@ -1,6 +1,7 @@
 import numpy as np
 import struct
 import json
+import torch
 from torch.utils.data import Dataset
 import os
 

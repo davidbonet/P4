@@ -2,6 +2,7 @@
 prefix = /Users/davidbonet/Desktop/P4Git
 libdir = lib
 buildtype = release
+backend = ninja
 
 [properties]
 

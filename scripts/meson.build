@@ -2,14 +2,12 @@
 
 scripts = [
     'run_spkid.sh',
-    'run_spkid_mini.sh',
     'plot_gmm_feat.py',
     'plot_gmm_feat_extended.py',
     'spk_verif_score.pl',
     'wav2lp.sh',
     'wav2lpcc.sh',
     'wav2mfcc.sh',
-    'wav2mfcc_mini.sh',
 ]
 
 foreach script: scripts
